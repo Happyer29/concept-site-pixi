@@ -7,10 +7,11 @@
     "composite": true, // TODO
 
     "module": "es6",
+    "moduleResolution": "node",
     "lib": ["es5", "es6", "es2015.promise", "es2016.array.include", "DOM"], // Набор библиотечных файлов полифилов, которые будут включены в итоговый выходной файл.
     "alwaysStrict": true, // Компилировать ли каждый файл в строгом режиме и создавать ли 'use strict' для каждого выходного файла? Требуется TypeScript версии 2.1 или новее.
     "noEmitOnError": true, // Не создавать итоговый файл, если во время компиляции произошла ошибка.
-    "noUnusedLocals": true, // Показывать ошибку, если где-то найдены неиспользуемые локальные значения.
+    "noUnusedLocals": false, // Показывать ошибку, если где-то найдены неиспользуемые локальные значения.
     "noUnusedParameters": true, // Показывать ошибку, если где-то найдены неиспользуемые параметры.
     "pretty": true, // Окрашивать в терминале сообщения об ошибках.
     "removeComments": true, // Удалить все комментарии из итогового файла.
@@ -20,12 +21,12 @@
     "allowSyntheticDefaultImports" : true,
     "esModuleInterop" : true,
     "noImplicitAny": false,
-    "strictNullChecks": true,
+    "strictNullChecks": false,
     //"outFile": "./scripts/build/bundle.js", // Имя единого итогового выходного файла, в который будут помещен код из всех найденных TypeScript-файлов.
     //"outDir": "./scripts/build",
     "baseUrl": ".", 
     "paths": {
-      "three": ["./node_modules/three/src/Three"]
+      //"three": ["./node_modules/three/src/Three"]
     }
   },
   "include": ["./scripts/src/**/*"],

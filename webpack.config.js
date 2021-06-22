@@ -42,7 +42,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.json', '.js', '.jsx', 'ts', 'tsx']
+    extensions: ['.json', '.js', '.jsx', '.ts', '.tsx']
   },
   devtool: 'source-map',
 

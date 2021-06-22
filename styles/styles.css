@@ -6,4 +6,10 @@
   text-decoration: none;
   outline: none;
 }
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 /*# sourceMappingURL=styles.css.map */
